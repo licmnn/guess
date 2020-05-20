@@ -1,5 +1,9 @@
 import random
-r = random.randint(1,100)
+start = input('请决定随机数字范围开始值： ') #由用户确定起始值
+end = input('请决定随机数字范围结束值： ')   #由用户确定结束值
+start = int(start)
+end = int(end)
+r = random.randint(start,end)
 count = 0             # 设定计数，猜了几次
 while True:
 	count += 1         #增加计数器
